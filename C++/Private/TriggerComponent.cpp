@@ -56,7 +56,7 @@ bool UTriggerComponent::CheckTriggerConditions()
 					}
 					break;
 				}
-		case ETriggerCondition::OtherTriggered :
+			case ETriggerCondition::OtherTriggered :
 				{
 					if(Condition.TriggerObjectReference->FindComponentByClass<UTriggerComponent>()->bWasTriggered != Condition.bRequiredTriggerState)
 					{
